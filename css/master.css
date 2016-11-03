@@ -1,0 +1,293 @@
+@font-face {
+  font-family: myfont;
+  src: url('/fonts/myfont.woff') format('woff');
+  font-style:normal;
+  font-weight:normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: myfont;
+
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.container {
+  height: auto;
+}
+
+body {
+  background: url('/img/background.jpg');
+  background-size: 100% auto;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#navbar {
+  transition: opacity .2s , transform .3s;
+}
+@media only screen and (max-width: 1300px)
+{
+  .tbtn {
+
+    display: block;
+    background: linear-gradient(to left,rgba(150,150,150,1),rgba(100,100,100,0));
+    width: 99%;
+    margin:10px 5px 1px 0px;
+
+    height: 50px;
+  }
+  .togglebtn {
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+    z-index: 1;
+    background-color: white;
+
+    float:right;
+    clear: right;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+
+    background-color: rgba(255,255,255,.9);
+    border-radius: 15px;
+    padding: 2px;
+    box-shadow: 0px 2px 12px black;
+
+    transition:font-size .2s , width .2s , transform .2s
+    , color .1s , margin .2s , display .2s ;
+  }
+
+  .intro {
+
+
+  }
+  .fullimg {
+    width: 98% !important;
+  }
+
+  .rightCl{
+    max-width: 400px;
+    margin: auto;
+  }
+  .data {
+    transition: * .2s;
+    position: absolute;
+    margin: 0px;
+    width: 99%;
+  }
+
+  .nav {
+    position: absolute;
+    z-index: 1;
+    transform: translate(500px,0px);
+  }
+  .nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+
+    background-color: rgba(255,255,255,.9);
+    border-radius: 15px;
+
+    width: 250px;
+    padding: 2px;
+    margin: 4px;
+    box-shadow: 0px 2px 12px black;
+
+    transition:font-size .2s , width .2s , transform .2s
+    , color .1s , margin .2s , display .2s ;
+  }
+  .nav a:hover{
+    width:250px;
+    font-size: 35px;
+    background-color: #00E600;
+    box-shadow: 0px 2px 12px black;
+  }
+  .databox {
+    width: 98%;
+  }
+  .content {
+    float: right;
+    width: 98%;
+  }
+  .databox {
+    width: 98%;
+  }
+  .subcon {
+    width: 98%;
+    float: right;
+    clear: right;
+  }
+
+  .p1{
+    margin: 0px;
+    padding: 0px;
+    width: 98%;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 1300px) {
+
+  .togglebtn{
+    display: none;
+  }
+  .rightCl{
+    float:right;
+  }
+  .nav {
+    margin: 40px 10px 20px 0px;
+    height: 40px;
+    width: auto;
+    float:right;
+  }
+  .data {
+    float: right;
+    margin: 10px;
+    width: 95%;
+  }
+  .nav a:hover{
+    width:250px;
+    font-size: 34px;
+    background-color: #00E600;
+    box-shadow: 0px 2px 12px black;
+  }
+  .nav a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+
+    background-color: rgba(255,255,255,.9);
+    border-radius: 15px;
+
+    padding: 7px;
+    margin: 15px;
+    box-shadow: 0px 2px 12px black;
+
+    transition:font-size .2s , width .2s , transform .2s
+    , color .1s , margin .2s ;
+  }
+
+  .databox {
+    float: right;
+    max-width: 1200px;
+    align-items: center;
+  }
+
+  .content {
+    width: 1180px;
+    float: right;
+    clear: right;
+  }
+
+  .subcon {
+    max-width: 380px;
+    float: right;
+    height: 300px;
+  }
+  .p1 {
+    float: right;
+    width: 380px;
+    }
+
+}
+
+
+.nav a.active {
+  font-size: 34px;
+  background-color: #00E600;
+  box-shadow: 0px 2px 12px black;
+}
+
+.databox {
+  float: right;
+}
+.box {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 4px 10px black;
+  text-align: center;
+  background-color: rgba(255,255,255,.9);
+}
+
+.intro h1 {
+  position: relative;
+  top: -5px;
+  left: 20px;
+  text-align: left;
+  color: white;
+  text-shadow:0px 0px 15px pink;
+}
+.intro {
+  position: relative;
+  background: url('/img/call-background.png');
+  background-color: rgba(255,255,255,.9);
+  background-repeat: no-repeat;
+  transition: box-shadow .1s;
+}
+.call {
+  position: relative;
+  padding: 7px;
+  background-color: rgba(255, 153, 0,.7);
+}
+.phnumber {
+  font-family: tahoma serif;
+}
+.content h1{
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  background-color:  lightgreen;
+  font-size: 35px;
+  padding: 7px;
+}
+.content p {
+  padding: 10px;
+}
+.databox p , .content h2 , .content p{
+  line-height: 35px;
+  text-align: justify;
+}
+.subcon {
+  float: right;
+  color: black;
+  transition: box-shadow .1s;
+
+}
+.subcon:hover , .intro:hover{
+  box-shadow: 0px 0px 20px black;
+}
+.col {
+  float:right;
+}
+.pbox {
+  float: right;
+  clear: right;
+  margin: 10px;
+  box-shadow: 0px 4px 10px black;
+}
+
+@media only screen and (max-width: 1750px) and (min-width: 1000px){
+  body {
+    zoom: 80%;
+  }
+}
+
+@media only screen and (max-width: 1750px) and (min-width: 1000px){
+  body {
+    zoom: 80%;
+  }
+}
